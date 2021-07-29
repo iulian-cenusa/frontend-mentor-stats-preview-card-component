@@ -1,0 +1,115 @@
+/*font imports*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+body{
+    background-color: hsl(233, 47%, 7%);
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+    font-family: 'Inter';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main{
+    display: flex;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+    margin: 25px;
+}
+
+#card-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+#description{
+    font-family: 'Lexend Daca';
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.metrics-component p{
+    text-transform: uppercase;
+    font-family: 'Lexend Daca';
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+span{
+    color: hsl(277, 64%, 61%);
+}
+
+#image-wrapper{
+    background-color: hsl(277, 64%, 61%);
+}
+
+img{
+    mix-blend-mode: overlay;
+}
+
+@media (min-width: 375px){
+    #img-desktop{
+        display: none;
+    }
+    #img-mobile{
+        display: flex;
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    #main{
+        width: 375px;
+        flex-direction: column;
+    }
+    #card-wrapper{
+        align-items: center;
+        margin: 25px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1440px){
+    #img-desktop{
+        display: flex;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        height: 100%;
+    }
+    #img-mobile{
+        display: none;
+    }
+    #main{
+        flex-direction: row-reverse;
+        align-items: center;
+        height: 75vh;
+        width: 185vh;
+        margin-top: 50px;
+    }
+    #image-wrapper{
+        height: 100%;
+    }
+    #card-wrapper{
+        height: 100%;
+    }
+    #title{
+        text-align: left;
+        margin: 50px 125px 50px 50px;
+        font-weight: 700;
+    }
+    #description{
+        text-align: left;
+        margin: 10px 125px 50px 50px;
+    }
+    #metrics{
+        display: flex;
+        flex-direction: row;
+        align-items: left;
+        width: 85%;
+    }
+    .metrics-component {
+        margin: 25px;
+    }
+
+}
